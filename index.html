@@ -4,35 +4,132 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
     <title>Meu Portfólio</title>
 </head>
 <body>
-    <header class="container text-center">
-    <img src="img/avatarredondo.jpg" alt="avatar do bento" class="rounded-circle" width="150" height="150" srcset="">
-    <h1>Eu sou Bento_</h1>
-    <h2>Eu jogo Futebol</h2>
-    <p>Jogo futebol desde os meus 3 anos, atualmente jogo pela Porto Football e disputo o campeonato Paulista</p>
-    <p>Minhas Funções</p>
-    <div>
-        <p class="badge bg-secondary">ZAGUEIRO</p>
-        <p class="badge bg-secondary">LATERAL ESQUERDO</p>
-    </div>
+    <header class="container text-center py-5">
+        <img src="img/avatarredondo.jpg" alt="avatar do Bento" class="rounded-circle" width="250" height="250">
+        <h1>Eu sou Bento</h1>
+        <h3>Eu jogo Futebol</h3>
+        <p>Jogo futebol desde os meus 3 anos, atualmente jogo pela Porto Football e disputo o campeonato Paulista.</p>
+        <p>Minhas Funções</p>
+        <div>
+            <span class="badge bg-secondary">ZAGUEIRO</span>
+            <span class="badge bg-secondary">LATERAL ESQUERDO</span>
+        </div>
     </header>
+
     <main class="container">
-        <h3>Meus Jogos Recentes</h3>
+        <h3 class="my-5 text-center">Meus Jogos Recentes</h3>
         <div class="row">
-            <div class="col-md-4">
-                <div class="card" style="width: 18rem;">
-  <img src="img/IMG_1963.JPG" class="card-img-top" width="250" height="225" alt="noroeste">
-  <div class="card-body">
-    <h5 class="card-title">Porto x Noroeste</h5>
-    <p class="card-text">Foi minha estreia no Paulista e consegui contribuir com um gol.</p>
-    <a href="#" class="btn btn-primary">Saiba Mais</a>
-  </div>
-</div>
+            <!-- Jogo 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm" style="width: 100%;">
+                    <img src="img/IMG_1963.JPG" class="card-img-top" alt="Porto x Noroeste">
+                    <div class="card-body">
+                        <h4 class="card-title">Porto x Noroeste</h4>
+                        <p class="card-text">Foi minha estreia no Paulista e consegui contribuir com um gol.</p>
+                        <!-- Modal Trigger -->
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal1">Saiba Mais</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Jogo 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm" style="width: 100%;">
+                    <img src="img/IMG_2052.JPG" class="card-img-top" alt="Porto x Ferroviária">
+                    <div class="card-body">
+                        <h4 class="card-title">Porto x Ferroviária</h4>
+                        <p class="card-text">Ótima partida defensiva do grupo diante da grande equipa da Ferroviária.</p>
+                        <!-- Modal Trigger -->
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal2">Saiba Mais</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Jogo 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm" style="width: 100%;">
+                    <img src="img/IMG_2026.JPG" class="card-img-top" alt="Porto x Matonense">
+                    <div class="card-body">
+                        <h4 class="card-title">Porto x Matonense</h4>
+                        <p class="card-text">Grande jogo, pelo campeonato Paulista, em baixo de uma chuva forte.</p>
+                        <!-- Modal Trigger -->
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal3">Saiba Mais</button>
+                    </div>
+                </div>
             </div>
         </div>
-
     </main>
+    
+    <!-- Footer -->
+    <footer class="container text-center py-5">
+        <h2>Entre em contato</h2>
+        <div class="social-links">
+            <a href="https://instagram.com/bento_garcia_" class="btn btn-outline-dark btn-lg" target="_blank">
+                <i class="bi bi-instagram"></i> Instagram
+            </a>
+        </div>
+        <p class="my-5">© Copyright 2025. Produzido por Bento Garcia</p>
+    </footer>
+
+    <!-- Modals -->
+    <!-- Modal 1 -->
+    <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal1Label">Porto x Noroeste</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Detalhes do jogo: Minha estreia no campeonato Paulista foi marcada por uma grande vitória e um gol que ajudou muito no resultado.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal2Label">Porto x Ferroviária</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Detalhes do jogo: Em uma partida tensa, nossa defesa brilhou contra a Ferroviária, garantindo um empate importante.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modal3Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal3Label">Porto x Matonense</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Detalhes do jogo: Enfrentamos a Matonense em um jogo difícil, com muita chuva e um excelente desempenho do time.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 </body>
 </html>
